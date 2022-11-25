@@ -1,8 +1,8 @@
 FROM adoptopenjdk/openjdk11
 RUN apt-get update && apt-get install -y unzip
 WORKDIR /apim
-COPY ./product/wso2am-3.2.0.zip .
-RUN unzip -q wso2am-3.2.0.zip
+COPY ./product/wso2am-4.1.0.zip .
+RUN unzip -q wso2am-4.1.0.zip
 
 COPY ./main.sh .
 RUN chmod +x main.sh
